@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
+
 }
 body{
     display: flex;
@@ -13,44 +14,49 @@ body{
     align-items: center;
     height: 200px;
     min-height: 100vh;
-    background-color: #333;
-
+    background-image: radial-gradient(circle, #ced6d5, #d7dddf, #e0e5e7, #eaecef, #f4f4f6, #eef0f8, #e7ecfa, #dee9fc, #b7dcf7, #85d2ea, #4cc7d2, #00baae);
+   border-radius: 25%;
 
 }
 
 .container{
-    position: relative;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
+ 
+        position: relative;
+        width: 450px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        overflow: hidden; /* Taşmayı gizler */
+    
+    
 }
 
-.text{
-    color: #fff;
+/* .text{
+    color: black;
     font-size: 12px;
     text-align: center;
     align-items: center;
     z-index: 10;
+    padding-right: 5px;
 
-}
+} */
 
 .container .spinBtn 
 {
     position: absolute;
-    width: 75px;
+    /* width: 75px; */
     height: 75px;
     background-color: #fff;
     border-radius: 50%;
     z-index: 10;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align:center;
     color: #333;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.3em;
     cursor: pointer;
     user-select:none;
     border:  4px solid rgba(0,0,0,0.75);
